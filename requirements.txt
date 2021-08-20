@@ -1,0 +1,4 @@
+flask
+Pillow
+pytest
+pytest-httpserver
