@@ -9,12 +9,12 @@
 
 **Sending a file**
 ```sh
-$ curl -F 'file=path/to/file.jpg' http://localhost:5000/
+$ curl -F 'file=@path/to/file.jpg' http://localhost:5000/
 ```
 
-**Getting a file**
+**Getting a file to your machine**
 ```sh
-$ curl http://localhost:5000/2474216.jpg
+$ curl -o name.jpg http://localhost:5000/2474216.jpg
 ```
 
 # How to run it
