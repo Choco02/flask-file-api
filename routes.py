@@ -1,8 +1,13 @@
-from flask import jsonify, send_from_directory, request, url_for
+from flask import jsonify, send_from_directory, request, url_for, Response
 from werkzeug.utils import secure_filename
-from util import Util
-from app import app
 import os
+
+if os.environ.get('PYTEST_CURRENT_TEST'):
+    from tests.test_routes import app
+    from tests.test_routes import Util
+else:
+    from util import Util
+    from app import app
 
 @app.route('/<file>', methods=['GET'])
 def serve_files(file):
