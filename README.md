@@ -22,6 +22,10 @@ $ curl -o name.jpg http://localhost:5000/2474216.jpg
 `pip install -r requirements.txt`
 * Run `flask run`
 
+# Run the tests
+* `python3 run_tests.py` on Linux
+* `python run_tests.py` on Windows
+
 # TODO
-- [ ] Add tests
+- [x] Add tests
 - [ ] Handle multiple files
